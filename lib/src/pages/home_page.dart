@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qnbfinansbank_getx/src/controller/home/home_controller.dart';
+import 'package:qnbfinansbank_getx/src/pages/widgets/button_widget.dart';
+import 'package:qnbfinansbank_getx/src/pages/widgets/loading_widget.dart';
 import 'package:qnbfinansbank_getx/src/routes/app_pages.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,7 +12,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ana sayfa'),
+        title: const Text(
+          'Ana sayfa',
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Container(
         // width: Get.width / 2,
@@ -23,7 +31,7 @@ class HomePage extends StatelessWidget {
           },
           builder: (_) {
             return _.photosList.length < 1
-                ? const Center(child: CircularProgressIndicator())
+                ? const LoadingWidget()
                 : GridView.builder(
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
