@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qnbfinansbank_getx/src/controller/home/home_controller.dart';
-import 'package:qnbfinansbank_getx/src/pages/widgets/button_widget.dart';
 import 'package:qnbfinansbank_getx/src/pages/widgets/loading_widget.dart';
 import 'package:qnbfinansbank_getx/src/routes/app_pages.dart';
 

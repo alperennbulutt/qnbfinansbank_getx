@@ -7,7 +7,7 @@ import 'src/routes/app_pages.dart';
 void main() {
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: Routes.INITIAL,
+    initialRoute: Routes.Qnbfi,
     getPages: AppPages.pages,
     locale: const Locale('pt', 'BR'),
     translationsKeys: AppTranslation.translations,
